@@ -5,7 +5,8 @@ def nada_main():
     my_int1 = SecretInteger(Input(name="my_int1", party=party1))
     my_int2 = SecretInteger(Input(name="my_int2", party=party1))
 
-    # Perform bitwise AND operation on my_int1 and my_int2
-    result = my_int1 & my_int2
+    # Perform a simple computation: addition of my_int1 and my_int2
+    result = my_int1 + my_int2
 
-    return [Output(result, "bitwise_and_output", party1)]
+    # Output the result of the computation
+    return [Output(result, "sum_output", party1)]
